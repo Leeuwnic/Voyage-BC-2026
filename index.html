@@ -1114,7 +1114,7 @@ function updateCountdown() {
   const now = new Date();
   const diff = Math.ceil((depart - now) / 86400000);
   const el = document.getElementById('jours');
-  if (el) el.textContent = diff > 0 ? diff : (diff === 0 ? 'C'est aujourd'hui!' : 'En cours!');
+  if (el) el.textContent = diff > 0 ? diff : (diff === 0 ? "C'est aujourd'hui !" : "En cours !");
 }
 updateCountdown();
 setInterval(updateCountdown, 60000);
